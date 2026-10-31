@@ -1,0 +1,4 @@
+RELATORIO SENTINELX
+Data: 2026-10-31 09:22:04.328543
+
+Relatorio de monitoramento local.

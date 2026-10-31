@@ -1,0 +1,373 @@
+==================================================
+       SENTINELX - RELATORIO DE AMEACAS
+==================================================
+
+Data da analise: 2026-10-31 09:25:52.287576
+
+CONEXOES DE REDE ENCONTRADAS
+--------------------------------------------------
+
+IP remoto: 216.239.36.178
+Porta: 443
+Processo: Desconhecido
+Estado: TIME_WAIT
+Classificacao: IP PUBLICO - VERIFICAR
+----------------------------------------
+
+IP remoto: 52.41.75.148
+Porta: 443
+Processo: wpscloudsvr.exe
+Estado: CLOSE_WAIT
+Classificacao: IP PUBLICO - VERIFICAR
+----------------------------------------
+
+IP remoto: 172.64.155.209
+Porta: 443
+Processo: Desconhecido
+Estado: TIME_WAIT
+Classificacao: IP PUBLICO - VERIFICAR
+----------------------------------------
+
+IP remoto: 127.0.0.1
+Porta: 49257
+Processo: python.exe
+Estado: ESTABLISHED
+Classificacao: IP PRIVADO OU ESPECIAL
+----------------------------------------
+
+IP remoto: 74.144.159.205
+Porta: 443
+Processo: Code.exe
+Estado: ESTABLISHED
+Classificacao: IP PUBLICO - VERIFICAR
+----------------------------------------
+
+IP remoto: 104.16.248.249
+Porta: 443
+Processo: urban-vpn-service.exe
+Estado: ESTABLISHED
+Classificacao: IP PUBLICO - VERIFICAR
+----------------------------------------
+
+IP remoto: 52.41.75.148
+Porta: 443
+Processo: wpscloudsvr.exe
+Estado: CLOSE_WAIT
+Classificacao: IP PUBLICO - VERIFICAR
+----------------------------------------
+
+IP remoto: 44.250.121.250
+Porta: 443
+Processo: wpscloudsvr.exe
+Estado: CLOSE_WAIT
+Classificacao: IP PUBLICO - VERIFICAR
+----------------------------------------
+
+IP remoto: 162.159.136.234
+Porta: 443
+Processo: Discord.exe
+Estado: ESTABLISHED
+Classificacao: IP PUBLICO - VERIFICAR
+----------------------------------------
+
+IP remoto: 172.172.255.217
+Porta: 443
+Processo: svchost.exe
+Estado: ESTABLISHED
+Classificacao: IP PUBLICO - VERIFICAR
+----------------------------------------
+
+IP remoto: 71.18.118.243
+Porta: 443
+Processo: wpscloudsvr.exe
+Estado: CLOSE_WAIT
+Classificacao: IP PUBLICO - VERIFICAR
+----------------------------------------
+
+IP remoto: 172.64.148.235
+Porta: 443
+Processo: chrome.exe
+Estado: ESTABLISHED
+Classificacao: IP PUBLICO - VERIFICAR
+----------------------------------------
+
+IP remoto: 127.0.0.1
+Porta: 54275
+Processo: urban-vpn-service.exe
+Estado: ESTABLISHED
+Classificacao: IP PRIVADO OU ESPECIAL
+----------------------------------------
+
+IP remoto: 100.70.0.132
+Porta: 8009
+Processo: chrome.exe
+Estado: SYN_SENT
+Classificacao: IP PRIVADO OU ESPECIAL
+----------------------------------------
+
+IP remoto: 35.162.96.216
+Porta: 443
+Processo: wps.exe
+Estado: CLOSE_WAIT
+Classificacao: IP PUBLICO - VERIFICAR
+----------------------------------------
+
+IP remoto: 127.0.0.1
+Porta: 49253
+Processo: python.exe
+Estado: ESTABLISHED
+Classificacao: IP PRIVADO OU ESPECIAL
+----------------------------------------
+
+IP remoto: 216.239.36.178
+Porta: 443
+Processo: wpscloudsvr.exe
+Estado: ESTABLISHED
+Classificacao: IP PUBLICO - VERIFICAR
+----------------------------------------
+
+IP remoto: 162.159.136.232
+Porta: 443
+Processo: Discord.exe
+Estado: ESTABLISHED
+Classificacao: IP PUBLICO - VERIFICAR
+----------------------------------------
+
+IP remoto: 64.233.186.188
+Porta: 5228
+Processo: chrome.exe
+Estado: ESTABLISHED
+Classificacao: IP PUBLICO - VERIFICAR
+----------------------------------------
+
+IP remoto: 44.224.169.123
+Porta: 443
+Processo: Desconhecido
+Estado: TIME_WAIT
+Classificacao: IP PUBLICO - VERIFICAR
+----------------------------------------
+
+IP remoto: 172.64.148.235
+Porta: 443
+Processo: chrome.exe
+Estado: ESTABLISHED
+Classificacao: IP PUBLICO - VERIFICAR
+----------------------------------------
+
+IP remoto: 35.190.80.1
+Porta: 443
+Processo: chrome.exe
+Estado: ESTABLISHED
+Classificacao: IP PUBLICO - VERIFICAR
+----------------------------------------
+
+IP remoto: 127.0.0.1
+Porta: 49677
+Processo: AcerSysMonitorService.exe
+Estado: ESTABLISHED
+Classificacao: IP PRIVADO OU ESPECIAL
+----------------------------------------
+
+IP remoto: 35.190.80.1
+Porta: 443
+Processo: Desconhecido
+Estado: TIME_WAIT
+Classificacao: IP PUBLICO - VERIFICAR
+----------------------------------------
+
+IP remoto: 54.194.203.69
+Porta: 80
+Processo: QHSafeTray.exe
+Estado: ESTABLISHED
+Classificacao: IP PUBLICO - VERIFICAR
+----------------------------------------
+
+IP remoto: 148.113.190.78
+Porta: 17301
+Processo: RvControlSvc.exe
+Estado: ESTABLISHED
+Classificacao: IP PUBLICO - VERIFICAR
+----------------------------------------
+
+IP remoto: 127.0.0.1
+Porta: 49259
+Processo: python.exe
+Estado: ESTABLISHED
+Classificacao: IP PRIVADO OU ESPECIAL
+----------------------------------------
+
+IP remoto: 44.224.169.123
+Porta: 443
+Processo: Desconhecido
+Estado: TIME_WAIT
+Classificacao: IP PUBLICO - VERIFICAR
+----------------------------------------
+
+IP remoto: 44.250.121.250
+Porta: 443
+Processo: wpscloudsvr.exe
+Estado: CLOSE_WAIT
+Classificacao: IP PUBLICO - VERIFICAR
+----------------------------------------
+
+IP remoto: 127.0.0.1
+Porta: 49254
+Processo: python.exe
+Estado: ESTABLISHED
+Classificacao: IP PRIVADO OU ESPECIAL
+----------------------------------------
+
+IP remoto: 150.171.110.40
+Porta: 443
+Processo: Code.exe
+Estado: ESTABLISHED
+Classificacao: IP PUBLICO - VERIFICAR
+----------------------------------------
+
+IP remoto: 54.94.67.238
+Porta: 443
+Processo: chrome.exe
+Estado: ESTABLISHED
+Classificacao: IP PUBLICO - VERIFICAR
+----------------------------------------
+
+IP remoto: 172.217.162.3
+Porta: 80
+Processo: svchost.exe
+Estado: ESTABLISHED
+Classificacao: IP PUBLICO - VERIFICAR
+----------------------------------------
+
+IP remoto: 4.228.31.153
+Porta: 443
+Processo: Code.exe
+Estado: ESTABLISHED
+Classificacao: IP PUBLICO - VERIFICAR
+----------------------------------------
+
+IP remoto: 8.8.8.8
+Porta: 443
+Processo: urban-vpn-service.exe
+Estado: ESTABLISHED
+Classificacao: IP PUBLICO - VERIFICAR
+----------------------------------------
+
+IP remoto: 172.64.148.235
+Porta: 443
+Processo: chrome.exe
+Estado: ESTABLISHED
+Classificacao: IP PUBLICO - VERIFICAR
+----------------------------------------
+
+IP remoto: 127.0.0.1
+Porta: 49678
+Processo: AcerSysMonitorService.exe
+Estado: ESTABLISHED
+Classificacao: IP PRIVADO OU ESPECIAL
+----------------------------------------
+
+IP remoto: 127.0.0.1
+Porta: 65358
+Processo: AcerQAAgent.exe
+Estado: ESTABLISHED
+Classificacao: IP PRIVADO OU ESPECIAL
+----------------------------------------
+
+IP remoto: 127.0.0.1
+Porta: 5141
+Processo: AQAUserPS.exe
+Estado: ESTABLISHED
+Classificacao: IP PRIVADO OU ESPECIAL
+----------------------------------------
+
+IP remoto: 4.228.31.149
+Porta: 443
+Processo: Code.exe
+Estado: ESTABLISHED
+Classificacao: IP PUBLICO - VERIFICAR
+----------------------------------------
+
+IP remoto: 127.0.0.1
+Porta: 49670
+Processo: ADESv2Svc.exe
+Estado: ESTABLISHED
+Classificacao: IP PRIVADO OU ESPECIAL
+----------------------------------------
+
+IP remoto: 104.18.124.108
+Porta: 443
+Processo: EpicGamesLauncher.exe
+Estado: ESTABLISHED
+Classificacao: IP PUBLICO - VERIFICAR
+----------------------------------------
+
+IP remoto: 127.0.0.1
+Porta: 49671
+Processo: ADESv2Svc.exe
+Estado: ESTABLISHED
+Classificacao: IP PRIVADO OU ESPECIAL
+----------------------------------------
+
+IP remoto: 172.64.155.209
+Porta: 443
+Processo: Desconhecido
+Estado: TIME_WAIT
+Classificacao: IP PUBLICO - VERIFICAR
+----------------------------------------
+
+IP remoto: 44.250.121.250
+Porta: 443
+Processo: wpscloudsvr.exe
+Estado: CLOSE_WAIT
+Classificacao: IP PUBLICO - VERIFICAR
+----------------------------------------
+
+IP remoto: 127.0.0.1
+Porta: 19206
+Processo: urban-vpn-app.exe
+Estado: ESTABLISHED
+Classificacao: IP PRIVADO OU ESPECIAL
+----------------------------------------
+
+IP remoto: 44.250.121.250
+Porta: 443
+Processo: wpscloudsvr.exe
+Estado: CLOSE_WAIT
+Classificacao: IP PUBLICO - VERIFICAR
+----------------------------------------
+
+IP remoto: 44.250.121.250
+Porta: 443
+Processo: wpscloudsvr.exe
+Estado: CLOSE_WAIT
+Classificacao: IP PUBLICO - VERIFICAR
+----------------------------------------
+
+IP remoto: 104.192.108.79
+Porta: 80
+Processo: QHActiveDefense.exe
+Estado: ESTABLISHED
+Classificacao: IP PUBLICO - VERIFICAR
+----------------------------------------
+
+IP remoto: 44.250.121.250
+Porta: 443
+Processo: wpscloudsvr.exe
+Estado: CLOSE_WAIT
+Classificacao: IP PUBLICO - VERIFICAR
+----------------------------------------
+
+IP remoto: 172.64.155.209
+Porta: 443
+Processo: chrome.exe
+Estado: ESTABLISHED
+Classificacao: IP PUBLICO - VERIFICAR
+----------------------------------------
+
+RESUMO DA ANALISE
+Conexoes encontradas: 51
+IPs publicos para verificacao: 38
+
+IMPORTANTE: IP publico nao significa ataque. Os resultados precisam de investigacao adicional.
+
+Este relatorio nao confirma infeccao por virus nem identifica invasores.

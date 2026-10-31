@@ -1,0 +1,235 @@
+
+import os
+import hashlib
+import psutil
+from datetime import datetime
+
+
+BANNER = """
+========================================
+             SENTINELX
+       SECURITY THREAT MONITOR
+========================================
+"""
+
+
+def calcular_hash(caminho):
+    """
+    Calcula a impressão digital SHA-256
+    de um arquivo.
+    """
+
+    sha256 = hashlib.sha256()
+
+    try:
+        with open(caminho, "rb") as arquivo:
+
+            for bloco in iter(
+                lambda: arquivo.read(4096), b""
+            ):
+                sha256.update(bloco)
+
+        return sha256.hexdigest()
+
+    except Exception:
+        return None
+
+
+def escanear_arquivo():
+
+    print("\n=== SCANNER DE ARQUIVOS ===")
+
+    caminho = input(
+        "Digite o caminho completo do arquivo: "
+    )
+
+    if not os.path.isfile(caminho):
+
+        print("[ERRO] Arquivo não encontrado.")
+        return
+
+    resultado = calcular_hash(caminho)
+
+    if resultado:
+
+        print("\n[+] Arquivo analisado!")
+        print(f"[+] SHA-256: {resultado}")
+
+        print(
+            "\nEste hash pode ser comparado "
+            "com bases de ameaças conhecidas."
+        )
+
+    else:
+
+        print("[ERRO] Não foi possível analisar.")
+
+
+def monitorar_rede():
+
+    print("\n=== MONITOR DE REDE ===")
+
+    conexoes = psutil.net_connections(
+        kind="inet"
+    )
+
+    print("\nConexões encontradas:\n")
+
+    for conexao in conexoes:
+
+        if not conexao.raddr:
+            continue
+
+        ip = conexao.raddr.ip
+        porta = conexao.raddr.port
+
+        processo = "Desconhecido"
+
+        try:
+
+            if conexao.pid:
+
+                processo = psutil.Process(
+                    conexao.pid
+                ).name()
+
+        except Exception:
+            pass
+
+        print("------------------------------")
+
+        print(f"IP remoto: {ip}")
+        print(f"Porta remota: {porta}")
+        print(f"Processo: {processo}")
+        print(f"Estado: {conexao.status}")
+
+    print("\nMonitoramento finalizado.")
+
+
+def gerar_relatorio():
+    import ipaddress
+
+    print("\n=== RELATÓRIO DE AMEAÇAS ===")
+
+    nome = "relatorio_ameacas_sentinelx.txt"
+
+    try:
+        conexoes = psutil.net_connections(kind="inet")
+
+        with open(nome, "w", encoding="utf-8") as arquivo:
+            arquivo.write("=" * 50 + "\n")
+            arquivo.write("       SENTINELX - RELATORIO DE AMEACAS\n")
+            arquivo.write("=" * 50 + "\n")
+
+            arquivo.write(f"\nData da analise: {datetime.now()}\n")
+            arquivo.write("\nCONEXOES DE REDE ENCONTRADAS\n")
+            arquivo.write("-" * 50 + "\n")
+
+            suspeitas = 0
+            total = 0
+
+            for conexao in conexoes:
+                if not conexao.raddr:
+                    continue
+
+                total += 1
+
+                ip = conexao.raddr.ip
+                porta = conexao.raddr.port
+                processo = "Desconhecido"
+
+                try:
+                    if conexao.pid:
+                        processo = psutil.Process(conexao.pid).name()
+                except Exception:
+                    pass
+
+                try:
+                    endereco = ipaddress.ip_address(ip)
+
+                    if endereco.is_global:
+                        classificacao = "IP PUBLICO - VERIFICAR"
+                        suspeitas += 1
+                    else:
+                        classificacao = "IP PRIVADO OU ESPECIAL"
+
+                except ValueError:
+                    classificacao = "IP NAO CLASSIFICADO"
+
+                arquivo.write(f"\nIP remoto: {ip}\n")
+                arquivo.write(f"Porta: {porta}\n")
+                arquivo.write(f"Processo: {processo}\n")
+                arquivo.write(f"Estado: {conexao.status}\n")
+                arquivo.write(f"Classificacao: {classificacao}\n")
+                arquivo.write("-" * 40 + "\n")
+
+            arquivo.write("\nRESUMO DA ANALISE\n")
+            arquivo.write(f"Conexoes encontradas: {total}\n")
+            arquivo.write(f"IPs publicos para verificacao: {suspeitas}\n")
+
+            arquivo.write(
+                "\nIMPORTANTE: IP publico nao significa ataque. "
+                "Os resultados precisam de investigacao adicional.\n"
+            )
+
+            arquivo.write(
+                "\nEste relatorio nao confirma infeccao por virus "
+                "nem identifica invasores.\n"
+            )
+
+        print(f"\n[+] Relatorio criado: {nome}")
+        print(f"[+] Conexoes analisadas: {total}")
+        print(f"[+] IPs publicos para verificacao: {suspeitas}")
+
+    except psutil.AccessDenied:
+        print("\n[ERRO] Acesso negado ao consultar conexoes.")
+        print("Tente executar o VS Code como administrador.")
+
+    except Exception as erro:
+        print(f"\n[ERRO] Nao foi possivel gerar o relatorio: {erro}")
+
+
+def main():
+
+    while True:
+
+        print(BANNER)
+
+        print("[1] Escanear arquivo")
+        print("[2] Monitorar conexões")
+        print("[3] Gerar relatório")
+        print("[0] Sair")
+
+        opcao = input(
+            "\nEscolha uma opção: "
+        )
+
+        if opcao == "1":
+
+            escanear_arquivo()
+
+        elif opcao == "2":
+
+            monitorar_rede()
+
+        elif opcao == "3":
+
+            gerar_relatorio()
+
+        elif opcao == "0":
+
+            print("\nEncerrando SentinelX...")
+            break
+
+        else:
+
+            print("\nOpção inválida!")
+
+        input(
+            "\nPressione ENTER para continuar..."
+        )
+
+
+if __name__ == "__main__":
+
+    main()
